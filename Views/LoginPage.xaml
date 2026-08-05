@@ -52,10 +52,11 @@
                 CornerRadius="15"/>
 
             <Button
-                x:Name="RegisterButton"
-                Text="Create Account"
-                BackgroundColor="Transparent"
-                TextColor="#4A90E2"/>
+    x:Name="RegisterButton"
+    Text="Create Account"
+    BackgroundColor="Transparent"
+    TextColor="#4A90E2"
+    Clicked="RegisterButton_Clicked"/>
 
         </VerticalStackLayout>
 

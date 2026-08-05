@@ -15,31 +15,30 @@
         <Label
             Text="🌿"
             FontSize="80"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center" />
 
         <Label
             Text="MindEase"
             FontSize="40"
             FontAttributes="Bold"
             HorizontalOptions="Center"
-            TextColor="#2E7D32"/>
+            TextColor="#2E7D32" />
 
         <Label
             Text="Your safe space, one day at a time."
             FontSize="18"
             HorizontalTextAlignment="Center"
-            TextColor="Gray"/>
+            TextColor="Gray" />
 
         <Button
-    x:Name="GetStartedButton"
-    Text="Get Started"
-    BackgroundColor="#4A90E2"
-    TextColor="White"
-    CornerRadius="15"
-    HeightRequest="55"
-    FontSize="18"
-    Clicked="GetStartedButton_Clicked"/>
-
+            x:Name="GetStartedButton"
+            Text="Get Started"
+            BackgroundColor="#4A90E2"
+            TextColor="White"
+            CornerRadius="15"
+            HeightRequest="55"
+            FontSize="18"
+            Clicked="GetStartedButton_Clicked" />
 
     </VerticalStackLayout>
 

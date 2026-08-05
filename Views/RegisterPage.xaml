@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MindEase.Views.RegisterPage"
+    Title="Register"
+    BackgroundColor="#F5F9FC"
+    NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="18"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Create Account"
+                FontSize="34"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+
+            <Label
+                Text="Start your wellness journey today."
+                HorizontalOptions="Center"
+                TextColor="Gray"/>
+
+            <Entry
+                x:Name="FirstNameEntry"
+                Placeholder="First Name"/>
+
+            <Entry
+                x:Name="LastNameEntry"
+                Placeholder="Last Name"/>
+
+            <Entry
+                x:Name="EmailEntry"
+                Placeholder="Email"
+                Keyboard="Email"/>
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Password"
+                IsPassword="True"/>
+
+            <Entry
+                x:Name="ConfirmPasswordEntry"
+                Placeholder="Confirm Password"
+                IsPassword="True"/>
+
+            <Button
+                x:Name="CreateAccountButton"
+                Text="Create Account"
+                HeightRequest="55"
+                CornerRadius="15"
+                BackgroundColor="#4A90E2"
+                TextColor="White"/>
+
+            <Button
+                x:Name="BackToLoginButton"
+                Text="Already have an account?"
+                BackgroundColor="Transparent"
+                TextColor="#4A90E2"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
