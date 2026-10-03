@@ -1,14 +1,60 @@
-﻿<?xml version = "1.0" encoding = "UTF-8" ?>
-<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MindEase"
-             x:Class="MindEase.App">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<Application
+    x:Class="MindEase.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
     <Application.Resources>
+
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
+
+            <Color x:Key="PrimaryColor">
+                #2F8F6E
+            </Color>
+
+            <Color x:Key="BackgroundColor">
+                #F4FAF7
+            </Color>
+
+            <Color x:Key="TextColor">
+                #222222
+            </Color>
+
+            <Style TargetType="Label">
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource TextColor}" />
+
+                <Setter
+                    Property="FontFamily"
+                    Value="OpenSansRegular" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource PrimaryColor}" />
+
+                <Setter
+                    Property="TextColor"
+                    Value="White" />
+
+                <Setter
+                    Property="CornerRadius"
+                    Value="12" />
+
+                <Setter
+                    Property="FontFamily"
+                    Value="OpenSansSemibold" />
+
+                <Setter
+                    Property="Padding"
+                    Value="20,12" />
+            </Style>
+
         </ResourceDictionary>
+
     </Application.Resources>
+
 </Application>

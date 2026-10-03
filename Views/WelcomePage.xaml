@@ -1,45 +1,129 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="MindEase.Views.WelcomePage"
-    BackgroundColor="#F5F9FC"
+    BackgroundColor="#F4FAF7"
     NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout
-        Padding="30"
-        VerticalOptions="Center"
-        Spacing="25">
+    <ScrollView>
 
-        <Label
-            Text="🌿"
-            FontSize="80"
-            HorizontalOptions="Center" />
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="16">
 
-        <Label
-            Text="MindEase"
-            FontSize="40"
-            FontAttributes="Bold"
-            HorizontalOptions="Center"
-            TextColor="#2E7D32" />
+            <Label
+                Text="🌿"
+                FontSize="70"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0" />
 
-        <Label
-            Text="Your safe space, one day at a time."
-            FontSize="18"
-            HorizontalTextAlignment="Center"
-            TextColor="Gray" />
+            <Label
+                Text="MindEase"
+                FontSize="40"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#2E7D32" />
 
-        <Button
-            x:Name="GetStartedButton"
-            Text="Get Started"
-            BackgroundColor="#4A90E2"
-            TextColor="White"
-            CornerRadius="15"
-            HeightRequest="55"
-            FontSize="18"
-            Clicked="GetStartedButton_Clicked" />
+            <Label
+                Text="Your safe space, one day at a time."
+                FontSize="17"
+                HorizontalTextAlignment="Center"
+                TextColor="Gray" />
 
-    </VerticalStackLayout>
+            <Label
+                Text="A private space to check in, reflect, and find support - whenever you need it."
+                FontSize="15"
+                HorizontalTextAlignment="Center"
+                LineHeight="1.4"
+                Margin="0,5,0,10" />
+
+            <Border Padding="18" BackgroundColor="#E3F2EC" StrokeThickness="0">
+                <HorizontalStackLayout Spacing="12">
+                    <Image Source="icon_checkin.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Daily check-ins" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Padding="18" BackgroundColor="#E3F2FD" StrokeThickness="0">
+                <HorizontalStackLayout Spacing="12">
+                    <Image Source="icon_journal.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Journal and diary" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Padding="18" BackgroundColor="#E0F7FA" StrokeThickness="0">
+                <HorizontalStackLayout Spacing="12">
+                    <Image Source="icon_breathing.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Guided breathing exercises" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Padding="18" BackgroundColor="#FFF3E0" StrokeThickness="0">
+                <HorizontalStackLayout Spacing="12">
+                    <Image Source="icon_appointment.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Book a therapist near you" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Padding="18" BackgroundColor="#FCE4EC" StrokeThickness="0">
+                <HorizontalStackLayout Spacing="12">
+                    <Image Source="icon_community.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Community support" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Border Padding="18" BackgroundColor="#FDECEA" StrokeThickness="0">
+                <HorizontalStackLayout Spacing="12">
+                    <Image Source="icon_crisis.svg" HeightRequest="24" WidthRequest="24" />
+                    <Label Text="Crisis resources" FontAttributes="Bold" FontSize="15" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </Border>
+
+            <Button
+                x:Name="LearnMoreButton"
+                Text="Learn more about MindEase"
+                BackgroundColor="Transparent"
+                TextColor="#2F8F6E"
+                Clicked="LearnMoreButton_Clicked"
+                Margin="0,5,0,0" />
+
+            <Label
+                Text="Your mood, journal, and diary entries stay on your device. In Community, you choose anonymous or named for every post."
+                FontSize="12"
+                TextColor="Gray"
+                HorizontalTextAlignment="Center"
+                LineHeight="1.4" />
+
+            <Button
+                x:Name="GetStartedButton"
+                Text="Create Account"
+                BackgroundColor="#2F8F6E"
+                TextColor="White"
+                CornerRadius="15"
+                HeightRequest="55"
+                FontSize="18"
+                Clicked="GetStartedButton_Clicked"
+                Margin="0,10,0,0" />
+
+            <Button
+                x:Name="LoginLinkButton"
+                Text="I already have an account"
+                BackgroundColor="Transparent"
+                TextColor="#2F8F6E"
+                Clicked="LoginLinkButton_Clicked" />
+
+            <Label
+                Text="MindEase is a wellness and support tool. It does not replace professional medical or mental health care. If you are in crisis or in danger, please use the Crisis Resources section or contact your local emergency services immediately."
+                FontSize="11"
+                TextColor="Gray"
+                HorizontalTextAlignment="Center"
+                LineHeight="1.4"
+                Margin="0,10,0,25" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
 
 </ContentPage>

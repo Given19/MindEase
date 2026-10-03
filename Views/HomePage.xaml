@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MindEase.Views.HomePage"
+    Title="MindEase"
+    BackgroundColor="#F4FAF7">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="16">
+
+            <HorizontalStackLayout Spacing="8">
+                <Image Source="icon_leaf_header.svg" HeightRequest="22" WidthRequest="22" />
+                <Label Text="Welcome back" FontSize="20" FontAttributes="Bold" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Border BackgroundColor="#D9534F" StrokeThickness="0" Padding="14">
+                <Grid ColumnDefinitions="Auto,*,Auto">
+                    <Image Grid.Column="0" Source="icon_crisis.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                    <Label Grid.Column="1" Text="Crisis Resources" TextColor="White" FontAttributes="Bold" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" />
+                    <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                </Grid>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="CrisisResources_Tapped" />
+                </Border.GestureRecognizers>
+            </Border>
+
+            <Label Text="TRACK" FontSize="11" FontAttributes="Bold" TextColor="#6B7D74" Margin="4,10,0,0" />
+
+            <VerticalStackLayout Spacing="1">
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_checkin.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="Check In" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="CheckIn_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_diary.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="My Diary" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Diary_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_journal.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="My Journal" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Journal_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_moodhistory.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="Mood History" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MoodHistory_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+            </VerticalStackLayout>
+
+            <Label Text="SUPPORT" FontSize="11" FontAttributes="Bold" TextColor="#6B7D74" Margin="4,10,0,0" />
+
+            <VerticalStackLayout Spacing="1">
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_breathing.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="Breathing Exercise" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Breathing_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_community.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="Community" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Community_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+                <Border BackgroundColor="White" StrokeThickness="0" Padding="14">
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Image Grid.Column="0" Source="icon_appointment.svg" HeightRequest="20" WidthRequest="20" VerticalOptions="Center" />
+                        <Label Grid.Column="1" Text="Book Appointment" FontSize="14" Margin="10,0,0,0" VerticalOptions="Center" TextColor="#1E2B24" />
+                        <Image Grid.Column="2" Source="icon_chevron.svg" HeightRequest="16" WidthRequest="16" VerticalOptions="Center" />
+                    </Grid>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Appointments_Tapped" />
+                    </Border.GestureRecognizers>
+                </Border>
+
+            </VerticalStackLayout>
+
+            <Label
+                Text="Logout"
+                TextColor="#AA3333"
+                FontSize="13"
+                HorizontalOptions="Center"
+                Margin="0,15,0,20">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Logout_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

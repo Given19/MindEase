@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MindEase.Views.MoodCheckInPage"
+    Title="Check In">
+
+    <Grid RowDefinitions="*,Auto">
+
+        <ScrollView
+            x:Name="ChatScrollView"
+            Grid.Row="0">
+
+            <VerticalStackLayout
+                x:Name="MessagesStack"
+                Padding="15"
+                Spacing="12" />
+
+        </ScrollView>
+
+        <VerticalStackLayout
+            Grid.Row="1"
+            Padding="15"
+            Spacing="10"
+            BackgroundColor="#F4FAF7">
+
+            <FlexLayout
+                x:Name="MoodChipsLayout"
+                Wrap="Wrap"
+                JustifyContent="Center"
+                IsVisible="True">
+
+                <Button
+                    Text="😊 Happy"
+                    CommandParameter="Happy"
+                    Clicked="MoodChip_Clicked"
+                    Margin="4"
+                    Padding="14,8" />
+
+                <Button
+                    Text="😔 Sad"
+                    CommandParameter="Sad"
+                    Clicked="MoodChip_Clicked"
+                    Margin="4"
+                    Padding="14,8" />
+
+                <Button
+                    Text="😰 Anxious"
+                    CommandParameter="Anxious"
+                    Clicked="MoodChip_Clicked"
+                    Margin="4"
+                    Padding="14,8" />
+
+                <Button
+                    Text="😠 Angry"
+                    CommandParameter="Angry"
+                    Clicked="MoodChip_Clicked"
+                    Margin="4"
+                    Padding="14,8" />
+
+                <Button
+                    Text="😴 Tired"
+                    CommandParameter="Tired"
+                    Clicked="MoodChip_Clicked"
+                    Margin="4"
+                    Padding="14,8" />
+
+                <Button
+                    Text="😐 Neutral"
+                    CommandParameter="Neutral"
+                    Clicked="MoodChip_Clicked"
+                    Margin="4"
+                    Padding="14,8" />
+
+            </FlexLayout>
+
+            <HorizontalStackLayout
+                x:Name="ReplyInputLayout"
+                IsVisible="False"
+                Spacing="8">
+
+                <Entry
+                    x:Name="ReplyEntry"
+                    Placeholder="Type your reply..."
+                    WidthRequest="220"
+                    Completed="SendButton_Clicked" />
+
+                <Button
+                    x:Name="SendButton"
+                    Text="Send"
+                    Clicked="SendButton_Clicked" />
+
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="FinishButton"
+                Text="Finish check-in"
+                IsVisible="False"
+                Clicked="FinishButton_Clicked" />
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

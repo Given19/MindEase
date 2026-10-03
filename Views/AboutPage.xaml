@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MindEase.Views.AboutPage"
+    Title="About MindEase"
+    BackgroundColor="#F4FAF7">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="18">
+
+            <Label
+                Text="Why your mental health matters"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#2F8F6E" />
+
+            <Label
+                Text="Mental health is just as important as physical health, yet it is so often pushed aside until it becomes impossible to ignore. Stress builds quietly. Anxiety lingers in the background of ordinary days. Low moods creep in without warning. Burnout doesn't announce itself until it's already taken hold."
+                FontSize="14"
+                LineHeight="1.5" />
+
+            <Label
+                Text="Most people carry more than they let on - at work, at school, in relationships, and in the quiet moments in between. And too often, the belief that 'it's not bad enough to ask for help' keeps people from reaching out until things feel unmanageable."
+                FontSize="14"
+                LineHeight="1.5" />
+
+            <Label
+                Text="It doesn't have to be that way. Checking in with yourself regularly, putting feelings into words, and having real support within reach can change how a difficult season is experienced - not by making problems disappear, but by making them easier to carry."
+                FontSize="14"
+                LineHeight="1.5" />
+
+            <Label
+                Text="Our Mission"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#2F8F6E"
+                Margin="0,15,0,0" />
+
+            <Label
+                Text="MindEase exists to make emotional support simple, private, and genuinely accessible - whether that means a two-minute check-in between meetings, a late-night diary entry, a guided breathing exercise, or booking time with a real therapist near you. No appointment required to start caring for yourself. No judgment. No pressure to have the right words."
+                FontSize="14"
+                LineHeight="1.5" />
+
+            <BoxView HeightRequest="1" Color="LightGray" Margin="0,15" />
+
+            <Label
+                Text="How It Works"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#2F8F6E" />
+
+            <Border Padding="18" StrokeThickness="1">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                    <Border Grid.Column="0" BackgroundColor="#2F8F6E" StrokeThickness="0" WidthRequest="30" HeightRequest="30" Padding="0" VerticalOptions="Start">
+                        <Label Text="1" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4">
+                        <Label Text="Create your free account" FontAttributes="Bold" FontSize="15" />
+                        <Label Text="Takes less than a minute - just your name, email, and a password." FontSize="13" TextColor="DimGray" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+            <Border Padding="18" StrokeThickness="1">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                    <Border Grid.Column="0" BackgroundColor="#2F8F6E" StrokeThickness="0" WidthRequest="30" HeightRequest="30" Padding="0" VerticalOptions="Start">
+                        <Label Text="2" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4">
+                        <Label Text="Check in, whenever you need to" FontAttributes="Bold" FontSize="15" />
+                        <Label Text="Log a mood, write in your journal, try a breathing exercise, or just explore." FontSize="13" TextColor="DimGray" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+            <Border Padding="18" StrokeThickness="1">
+                <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                    <Border Grid.Column="0" BackgroundColor="#2F8F6E" StrokeThickness="0" WidthRequest="30" HeightRequest="30" Padding="0" VerticalOptions="Start">
+                        <Label Text="3" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <VerticalStackLayout Grid.Column="1" Spacing="4">
+                        <Label Text="Reach further support when you want it" FontAttributes="Bold" FontSize="15" />
+                        <Label Text="Book a real therapist, lean on the community, or access crisis resources - all from the same app." FontSize="13" TextColor="DimGray" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Border>
+
+            <BoxView HeightRequest="1" Color="LightGray" Margin="0,15" />
+
+            <Label
+                Text="Your Privacy, Your Choice"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#2F8F6E" />
+
+            <Label
+                Text="Your mood entries, journal, and diary stay stored on your own device - not on a server, not visible to anyone else. In the Community space, you decide for every single post and comment whether to share it under your name or anonymously. Nothing is shared or posted on your behalf without you choosing to."
+                FontSize="14"
+                LineHeight="1.5" />
+
+            <BoxView HeightRequest="1" Color="LightGray" Margin="0,15" />
+
+            <Label
+                Text="Who MindEase Is For"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#2F8F6E" />
+
+            <Label
+                Text="Whether you're navigating everyday stress, working through something heavier, or simply want a quiet place to reflect, MindEase is built to meet you where you are - no diagnosis or label required to start."
+                FontSize="14"
+                LineHeight="1.5" />
+
+            <Label
+                Text="You don't have to have it all figured out. You just have to start."
+                FontSize="16"
+                FontAttributes="Italic"
+                HorizontalTextAlignment="Center"
+                TextColor="#2F8F6E"
+                Margin="0,20,0,30" />
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

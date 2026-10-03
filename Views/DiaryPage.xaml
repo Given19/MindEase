@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MindEase.Views.DiaryPage"
+    Title="My Diary">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="25"
+            Spacing="18">
+
+            <Label
+                Text="My Diary"
+                FontSize="32"
+                FontAttributes="Bold"/>
+
+            <Label
+                Text="Write anything that's on your mind. This is your private space. 🌿"
+                FontSize="16"
+                TextColor="Gray"/>
+
+            <Border
+                StrokeThickness="1"
+                Padding="15">
+
+                <Editor
+                    x:Name="DiaryEditor"
+                    Placeholder="Write about your day, your feelings, school, relationships, goals... anything."
+                    AutoSize="TextChanges"
+                    MinimumHeightRequest="180"/>
+
+            </Border>
+
+            <Button
+                x:Name="SaveDiaryButton"
+                Text="Save Diary Entry 💾"
+                HeightRequest="55"
+                BackgroundColor="#2F8F6E"
+                TextColor="White"
+                CornerRadius="15"
+                Clicked="SaveDiaryButton_Clicked"/>
+
+            <Button
+                x:Name="SuggestionsButton"
+                Text="Get Suggestions &amp; Motivation 🌿"
+                HeightRequest="55"
+                BackgroundColor="#4A7C59"
+                TextColor="White"
+                CornerRadius="15"
+                Clicked="SuggestionsButton_Clicked"/>
+
+            <Border
+                x:Name="ResponseCard"
+                IsVisible="False"
+                Padding="20"
+                StrokeThickness="1">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label
+                        Text="🌿 MindEase Reflection"
+                        FontSize="22"
+                        FontAttributes="Bold"/>
+
+                    <Label
+                        x:Name="SuggestionLabel"
+                        FontSize="16"/>
+
+                    <Label
+                        x:Name="MotivationLabel"
+                        FontSize="18"
+                        FontAttributes="Bold"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+            <Label
+                Text="Previous Entries"
+                FontSize="24"
+                FontAttributes="Bold"
+                Margin="0,15,0,0"/>
+
+            <CollectionView
+                x:Name="DiaryCollection"
+                SelectionMode="None">
+
+                <CollectionView.EmptyView>
+                    <Label
+                        Text="No diary entries yet. Start writing. 🌱"
+                        HorizontalOptions="Center"
+                        TextColor="Gray"
+                        Margin="0,20"/>
+                </CollectionView.EmptyView>
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <Border
+                            Padding="15"
+                            Margin="0,5"
+                            StrokeThickness="1">
+
+                            <VerticalStackLayout Spacing="8">
+
+                                <Label
+                                    Text="{Binding Date, StringFormat='{0:dd MMM yyyy HH:mm}'}"
+                                    FontSize="12"
+                                    TextColor="Gray"/>
+
+                                <Label
+                                    Text="{Binding Content}"
+                                    FontSize="16"/>
+
+                                <Label
+                                    Text="{Binding Motivation}"
+                                    FontSize="14"
+                                    FontAttributes="Bold"/>
+
+                            </VerticalStackLayout>
+
+                        </Border>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

@@ -50,18 +50,20 @@
                 IsPassword="True"/>
 
             <Button
-                x:Name="CreateAccountButton"
-                Text="Create Account"
-                HeightRequest="55"
-                CornerRadius="15"
-                BackgroundColor="#4A90E2"
-                TextColor="White"/>
+    x:Name="CreateAccountButton"
+    Text="Create Account"
+    HeightRequest="55"
+    CornerRadius="15"
+    BackgroundColor="#4A90E2"
+    TextColor="White"
+    Clicked="CreateAccountButton_Clicked"/>
 
             <Button
-                x:Name="BackToLoginButton"
-                Text="Already have an account?"
-                BackgroundColor="Transparent"
-                TextColor="#4A90E2"/>
+    x:Name="BackToLoginButton"
+    Text="Already have an account?"
+    BackgroundColor="Transparent"
+    TextColor="#4A90E2"
+    Clicked="BackToLoginButton_Clicked"/>
 
         </VerticalStackLayout>
 

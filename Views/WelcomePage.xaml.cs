@@ -9,6 +9,16 @@ public partial class WelcomePage : ContentPage
 
     private async void GetStartedButton_Clicked(object? sender, EventArgs e)
     {
+        await Shell.Current.GoToAsync(nameof(RegisterPage));
+    }
+
+    private async void LoginLinkButton_Clicked(object? sender, EventArgs e)
+    {
         await Shell.Current.GoToAsync(nameof(LoginPage));
+    }
+
+    private async void LearnMoreButton_Clicked(object? sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(AboutPage));
     }
 }
